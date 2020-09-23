@@ -37,9 +37,15 @@ public class ControllerHello {
         return  viewTrangChu;
     }
 
-    @RequestMapping(path = "/a",method = RequestMethod.GET)
-    public String trangChu1(){
-        return "hello2";
+    @RequestMapping("/chitiet")
+    public String chitiet(){
+        return "chitiet";
+    }
+
+
+    @RequestMapping("/chitiet1")
+    public String chitiet1(){
+        return "chitiet";
     }
 
 }

@@ -16,7 +16,6 @@
     String tong = ten + b;
 %>
 <%= tong%>
-<%
-%>
+<a href="chitiet">Qua trang chi tiet</a>
 </body>
 </html>
