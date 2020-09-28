@@ -12,8 +12,8 @@
 </head>
 <body>
 <h1>Day la trang chi tiet</h1>
-<h2> ten : ${id}</h2>
-<h2> ten sp : ${tensp}</h2>
-<h2> hoten : ${hoten}</h2>
+<h2> ten : ${nv.hoten}</h2>
+<h2> ten sp : ${nv.diachi}</h2>
+<h2> hoten : ${nv.cmnd}</h2>
 </body>
 </html>

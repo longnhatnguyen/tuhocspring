@@ -1,13 +1,13 @@
 package entity;
 
 public class NhanVien {
-	int manhanvien;
-	String hoten;
-	String diachi;
-	String cmnd;
-	String email;
-	String tendangnhap;
-	String matkhau;
+	private int manhanvien;
+	private String hoten;
+	private String diachi;
+	private String cmnd;
+	private String email;
+	private String tendangnhap;
+	private String matkhau;
 	public int getManhanvien() {
 		return manhanvien;
 	}
