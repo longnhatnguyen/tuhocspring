@@ -3,19 +3,18 @@ package controller;
 
 import entity.NhanVien;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Controller
-
+@RequestMapping("/")
 public class ControllerHello {
 
-    @RequestMapping(path = "/",method = RequestMethod.GET)
+    @GetMapping
     public ModelAndView trangChu(){
         ModelAndView viewTrangChu = new ModelAndView();
         viewTrangChu.setViewName("hello");
@@ -36,16 +35,19 @@ public class ControllerHello {
         viewTrangChu.addObject("list",nhanVienList);
         return  viewTrangChu;
     }
-
-    @RequestMapping("/chitiet")
-    public String chitiet(){
-        return "chitiet";
-    }
-
-
-    @RequestMapping("/chitiet1")
-    public String chitiet1(){
-        return "chitiet";
-    }
+//
+//    @RequestMapping("/chitiet1")
+//    public String chitiet(@RequestParam("id") int id, @RequestParam("tensp") String tensp, ModelMap modelMap){
+//
+//        modelMap.addAttribute("id",id);
+//        modelMap.addAttribute("tensp",tensp);
+//        return "chitiet";
+//    }
+//    //@RequestMapping( path = "/chitiet",method = RequestMethod.POST)
+//    @PostMapping("/chitiet")
+//    public String PostInfo(@RequestParam String hoten, ModelMap modelMap){
+//        modelMap.addAttribute("hoten",hoten);
+//        return "chitiet";
+//    }
 
 }

@@ -16,6 +16,13 @@
     String tong = ten + b;
 %>
 <%= tong%>
-<a href="chitiet">Qua trang chi tiet</a>
+<form action="/chitiet" method="post">
+    <input type="text" name="hoten">
+    <input type="submit" value="post du lieu">
+</form>
+
+
+<a href="chitiet1?id=22&tensp=daylahangnhai">Qua trang chi tiet</a>
+
 </body>
 </html>
