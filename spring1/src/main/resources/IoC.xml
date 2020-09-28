@@ -14,14 +14,14 @@
 		http://www.springframework.org/schema/tx
         http://www.springframework.org/schema/tx/spring-tx.xsd
 		">
-		
-	
-<!--	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">-->
-<!--		<property name="driverClassName" value="com.mysql.jdbc.Driver" />-->
-<!--        <property name="url" value="jdbc:mysql://localhost:3306/dbminishop" />-->
-<!--        <property name="username" value="root" />-->
-<!--        <property name="password" value="binh@123456" />-->
-<!--	</bean>-->
+
+
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/dbminishop" />
+		<property name="username" value="root" />
+		<property name="password" value="123456" />
+	</bean>
 
 <!--	<bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">-->
 <!--		<property name="dataSource" ref="dataSource"/>-->

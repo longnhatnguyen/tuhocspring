@@ -17,22 +17,22 @@ public class ControllerHello {
     @GetMapping
     public ModelAndView trangChu(){
         ModelAndView viewTrangChu = new ModelAndView();
-        viewTrangChu.setViewName("hello");
-        String username = "nguyen long nhat";
-        String password = "12345";
-        NhanVien nhanVien = new NhanVien();
-        nhanVien.setDiachi("abc");
-        System.out.println(nhanVien.getDiachi());
-        viewTrangChu.addObject("tendangnhap", username);
-        viewTrangChu.addObject("matkhau", password);
-        viewTrangChu.addObject("diachi", nhanVien.getDiachi());
-
-        nhanVien.setEmail("email1");
-        nhanVien.setCmnd("1212121");
-        nhanVien.setHoten("hoten1");
-        List<NhanVien> nhanVienList = new ArrayList<>();
-        nhanVienList.add(nhanVien);
-        viewTrangChu.addObject("list",nhanVienList);
+        viewTrangChu.setViewName("trangchu");
+//        String username = "nguyen long nhat";
+//        String password = "12345";
+//        NhanVien nhanVien = new NhanVien();
+//        nhanVien.setDiachi("abc");
+//        System.out.println(nhanVien.getDiachi());
+//        viewTrangChu.addObject("tendangnhap", username);
+//        viewTrangChu.addObject("matkhau", password);
+//        viewTrangChu.addObject("diachi", nhanVien.getDiachi());
+//
+//        nhanVien.setEmail("email1");
+//        nhanVien.setCmnd("1212121");
+//        nhanVien.setHoten("hoten1");
+//        List<NhanVien> nhanVienList = new ArrayList<>();
+//        nhanVienList.add(nhanVien);
+//        viewTrangChu.addObject("list",nhanVienList);
         return  viewTrangChu;
     }
 //

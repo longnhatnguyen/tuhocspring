@@ -32,10 +32,17 @@
 		        <li class="dropdown">
 		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sản phẩm <span class="caret"></span></a>
 		          <ul class="dropdown-menu">
+<<<<<<< HEAD
 		          	<c:forEach var="value" items="${danhmuc }"> 
 						<li><a href='<c:url value="/sanpham/${value.getMadanhmuc()}/${value.getTendanhmuc() }"/>'>${value.getTendanhmuc() }</a></li>
 						<li role="separator" class="divider"></li>
 					</c:forEach>
+=======
+<%--		          	<c:forEach var="value" items="${danhmuc }"> --%>
+<%--						<li><a href='<c:url value="/sanpham/${value.getMadanhmuc()}/${value.getTendanhmuc() }"/>'>${value.getTendanhmuc() }</a></li>--%>
+<%--						<li role="separator" class="divider"></li>--%>
+<%--					</c:forEach>--%>
+>>>>>>> origin/master
 		            
 		          </ul>
 		        </li>
@@ -45,6 +52,7 @@
 		      </ul>
 		      
 		      <ul class="nav navbar-nav navbar-right">
+<<<<<<< HEAD
 		      	<c:choose>
 		      		<c:when test="${chucaidau != null }">
 		      			 <li><a class="circle-avartar" href="dangnhap/"><span>${chucaidau }</span></a></li>
@@ -55,6 +63,18 @@
 		      		</c:otherwise>
 		      	</c:choose>
 		       
+=======
+<%--		      	<c:choose>--%>
+<%--		      		<c:when test="${chucaidau != null }">--%>
+<%--		      			 <li><a class="circle-avartar" href="dangnhap/"><span>${chucaidau }</span></a></li>--%>
+<%--		      		</c:when>--%>
+<%--		      		--%>
+<%--		      		<c:otherwise>--%>
+<%--		      			 <li><a href="dangnhap/">ĐĂNG NHẬP</a></li>--%>
+<%--		      		</c:otherwise>--%>
+<%--		      	</c:choose>--%>
+<%--		       --%>
+>>>>>>> origin/master
 		        <li><a href="#" ><img src='<c:url value="/resources/Image/ic_shopping_cart_white_24dp_1x.png"/>'></a></li>
 		        
 		       
@@ -93,6 +113,7 @@
 		
 	</div>
 	
+<<<<<<< HEAD
 	<div id="title-sanpham" class="container">
 		<span>SẢN PHẨM HOT</span>
 		<div class="row" style="margin-top:42px">
@@ -109,6 +130,24 @@
 					
 				</div>
 			</c:forEach>
+=======
+<%--	<div id="title-sanpham" class="container">--%>
+<%--		<span>SẢN PHẨM HOT</span>--%>
+<%--		<div class="row" style="margin-top:42px">--%>
+<%--		--%>
+<%--			<c:forEach var="sanpham" items="${listSanPham}">--%>
+<%--				<div class="col-md-3 col-sm-6">--%>
+<%--					<a href="chitiet/${sanpham.getMasanpham()}">--%>
+<%--						<div class="sanpham wow zoomIn">--%>
+<%--							<img alt="hinh" src='<c:url value="/resources/Image/sanpham/${sanpham.getHinhsanpham() }"/>' /><br/>--%>
+<%--							<span>${sanpham.getTensanpham()} </span><br/>--%>
+<%--							<span class="gia">${sanpham.getGiatien() } VNĐ</span>--%>
+<%--						</div>--%>
+<%--					</a>--%>
+<%--					--%>
+<%--				</div>--%>
+<%--			</c:forEach>--%>
+>>>>>>> origin/master
 			
 			<!-- end san pham --> 
 		</div>

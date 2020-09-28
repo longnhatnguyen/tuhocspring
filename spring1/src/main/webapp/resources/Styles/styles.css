@@ -47,7 +47,12 @@ ul{
 }
 
 #container-login-right{
-	
+	flex:1;
+	justify-content: space-between;
+	flex-direction: column;
+	padding: 0 24px;
+	padding-top:200px;
+
 }
 
 #header-top-left{
@@ -78,13 +83,7 @@ ul{
 	
 }
 
-#container-login-right{
-	display: flex;
-	flex:1;
-    justify-content: space-between;
-    flex-direction: column;
-	padding: 0 24px
-}
+
 
 #header-top-right{
 	font-size: 20px;

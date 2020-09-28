@@ -47,7 +47,16 @@ ul{
 }
 
 #container-login-right{
+<<<<<<< HEAD
 	
+=======
+	flex:1;
+	justify-content: space-between;
+	flex-direction: column;
+	padding: 0 24px;
+	padding-top:200px;
+
+>>>>>>> origin/master
 }
 
 #header-top-left{
@@ -78,6 +87,7 @@ ul{
 	
 }
 
+<<<<<<< HEAD
 #container-login-right{
 	display: flex;
 	flex:1;
@@ -85,6 +95,9 @@ ul{
     flex-direction: column;
 	padding: 0 24px
 }
+=======
+
+>>>>>>> origin/master
 
 #header-top-right{
 	font-size: 20px;
